@@ -136,7 +136,7 @@ Now when you know the scaffold let's give those blocks more explanation.
 
 ```
 // table.component.ts
-import template from './table.html!text';
+import template from './table.html';
 import './table.css!';
 import {Inject} from '../../common/utils/metadata/metadata';
 

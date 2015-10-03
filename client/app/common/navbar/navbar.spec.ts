@@ -5,7 +5,7 @@ import 'angular-mocks';
 import NavbarModule from './navbar';
 import NavbarController from './navbar.controller';
 import NavbarComponent from './navbar.component';
-import NavbarTemplate from './navbar.html!text';
+const NavbarTemplate = require( './navbar.html' );
 
 describe('Navbar', ()=>{
 	let $rootScope,

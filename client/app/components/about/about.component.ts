@@ -1,5 +1,6 @@
-import template from './about.html!text';
-import './about.css!';
+const template = require( './about.html' );
+
+require( './about.css' );
 
 //@Component( {
 //  selector: 'about'

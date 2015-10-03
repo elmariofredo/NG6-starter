@@ -1,6 +1,7 @@
-import template from './hero.html!text';
+const template = require( './hero.html' );
 import controller from './hero.controller';
-import './hero.css!';
+
+require( './hero.css' );
 
 let heroComponent = function(){
 	return {

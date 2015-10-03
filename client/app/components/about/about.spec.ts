@@ -4,7 +4,7 @@ import * as angular from 'angular';
 import 'angular-mocks';
 import AboutModule from './about'
 import AboutComponent from './about.component';
-import AboutTemplate from './about.html!text';
+const AboutTemplate = require( './about.html' );
 
 describe('About', ()=>{
 	let $rootScope,

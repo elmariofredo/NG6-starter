@@ -1,6 +1,6 @@
-import template from './navbar.html!text';
+const template = require( './navbar.html' );
 import controller from './navbar.controller';
-import './navbar.css!';
+import './navbar.css';
 
 let navbarComponent = function(){
 	return {

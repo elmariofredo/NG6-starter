@@ -1,5 +1,6 @@
-import template from './home.html!text';
-import './home.css!';
+const template = require('./home.html');
+
+require( './home.css' );
 
 //@Component( {
 //  selector: 'home'

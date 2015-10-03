@@ -5,7 +5,7 @@ import 'angular-mocks';
 import HeroModule from './hero';
 import HeroController from './hero.controller';
 import HeroComponent from './hero.component';
-import HeroTemplate from './hero.html!text';
+const HeroTemplate = require( './hero.html' );
 
 describe('Hero', ()=>{
 	let $rootScope,

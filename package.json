@@ -1,62 +1,46 @@
 {
-  "name": "angular-jspm-typescript-starter",
+  "name": "angular-webpack-typescript-starter",
   "version": "0.0.1",
   "description": "starter",
   "repository": {
     "type": "public",
-    "url": "https://github.com/ngParty/NG6-starter"
+    "url": "git://github.com/ngParty/NG6-starter.git#webpack"
   },
-  "dependencies": {},
+  "dependencies": {
+    "angular": "^1.4.7",
+    "angular-ui-router": "^0.2.15",
+    "normalize.css": "^3.0.3"
+  },
   "scripts": {
     "test": "karma start",
     "preinstall": "tsd reinstall -so",
-    "postinstall": "jspm install",
-    "start": "tsc;broccoli serve",
-    "dist": "tsc;rimraf dist;BROCCOLI_ENV=production broccoli build dist;jspm bundle-sfx app/app dist/index-bundle.js --minify"
+    "start": "webpack-dev-server --content-base client",
+    "build": "webpack --config webpack-build.config.js --progress --profile --colors --content-base client"
   },
   "keywords": [
     "angular",
-    "jspm",
-    "es6",
+    "webpack",
     "typescript"
   ],
   "author": "AngularClass",
   "license": "ISC",
-  "jspm": {
-    "directories": {
-      "baseURL": "client"
-    },
-    "dependencies": {
-      "angular": "npm:angular@^1.4.7",
-      "angular-mocks": "github:angular/bower-angular-mocks@^1.4.7",
-      "angular-ui-router": "npm:angular-ui-router@^0.2.15",
-      "clean-css": "npm:clean-css@^3.4.5",
-      "css": "github:systemjs/plugin-css@^0.1.16",
-      "normalize.css": "github:necolas/normalize.css@^3.0.3",
-      "text": "github:systemjs/plugin-text@^0.0.2"
-    },
-    "devDependencies": {
-      "core-js": "npm:core-js@^0.9.10"
-    }
-  },
   "devDependencies": {
-    "broccoli": "^0.16.8",
-    "broccoli-browser-sync": "^1.0.0",
-    "broccoli-cli": "^1.0.0",
-    "broccoli-env": "0.0.1",
-    "broccoli-merge-trees": "^0.2.3",
-    "browser-sync": "^2.7.6",
+    "angular-mocks": "^1.4.7",
     "chai": "^3.3.0",
-    "jspm": "^0.16.11",
-    "karma": "^0.12.36",
+    "css-loader": "^0.19.0",
+    "karma": "^0.13.10",
     "karma-chai": "^0.1.0",
-    "karma-chrome-launcher": "^0.1.12",
-    "karma-jspm": "https://github.com/JeroenVinke/karma-jspm#master",
-    "karma-mocha": "^0.1.10",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-mocha": "^0.2.0",
     "karma-mocha-reporter": "^1.0.2",
+    "karma-sourcemap-loader": "^0.3.5",
+    "karma-webpack": "^1.7.0",
     "mocha": "^2.3.3",
-    "rimraf": "^2.4.3",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.12.4",
+    "ts-loader": "^0.5.5",
     "typescript": "^1.6.2",
-    "yargs": "^3.10.0"
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.0"
   }
 }

@@ -1,5 +1,6 @@
-import template from './app.html!text';
-import './app.css!';
+const template = require( './app.html' );
+
+require( './app.css' );
 
 //@Component( {
 //  selector: 'app'

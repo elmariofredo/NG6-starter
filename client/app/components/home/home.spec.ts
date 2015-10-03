@@ -4,7 +4,7 @@ import * as angular from 'angular';
 import 'angular-mocks';
 import HomeModule from './home'
 import HomeComponent from './home.component';
-import HomeTemplate from './home.html!text';
+const HomeTemplate = require( './home.html' );
 
 describe('Home', ()=>{
 	let $rootScope,
