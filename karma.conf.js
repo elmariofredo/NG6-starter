@@ -8,7 +8,7 @@ module.exports = function (config) {
     frameworks: ['mocha', 'chai'],
 
     // list of files/patterns to load in the browser
-    files: ['/Users/mario/Dev/Github/NG6-starter/client/app/components/about/about.spec.ts'],
+    files: ['client/app/app.test.js'],
 
 
     // files: [{ pattern: 'spec.bundle.js', watched: false }],
@@ -18,7 +18,7 @@ module.exports = function (config) {
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
-    preprocessors: { '/Users/mario/Dev/Github/NG6-starter/client/app/components/about/about.spec.ts': ['webpack', 'sourcemap'] },
+    preprocessors: { 'client/app/app.test.js': ['webpack', 'sourcemap'] },
 
     // webpack: {
     //   devtool: 'inline-source-map',
@@ -34,7 +34,7 @@ module.exports = function (config) {
     webpack: {
       devtool: 'inline-source-map',
       resolve: {
-        // Add `.ts` and `.tsx` as a resolvable extension. 
+        // Add `.ts` and `.tsx` as a resolvable extension.
         extensions: ['', '.webpack.js', '.web.js', '.ts', '.js']
       },
       module: {
