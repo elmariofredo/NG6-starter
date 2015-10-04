@@ -7,7 +7,7 @@ import Common from './common/common';
 import Components from './components/components';
 import AppComponent from './app.component';
 
-require( 'normalize.css' );
+import  'normalize.css';;
 
 const ngModule = angular.module( 'app', [
   'ui.router',

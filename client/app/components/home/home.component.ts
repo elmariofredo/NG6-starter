@@ -1,6 +1,6 @@
 const template = require('./home.html');
 
-require( './home.css' );
+import  './home.css';;
 
 //@Component( {
 //  selector: 'home'

@@ -1,6 +1,6 @@
 const template = require( './app.html' );
 
-require( './app.css' );
+import './app.css';
 
 //@Component( {
 //  selector: 'app'
